@@ -5,10 +5,10 @@ function confirmAnswer() {
     let sum = x + y;
     var meth = prompt(`What's ${x} + ${y}`)
 
-    while (!(Number(meth) === Number(sum))) {
+    if (Number(meth) === Number(sum)) {
+        alert("ok");
+    } else {
         alert("dumbass");
-        return meth;
     }
-    console.log("good");
 }
 confirmAnswer()
